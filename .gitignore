@@ -1,0 +1,22 @@
+# Java / build
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+*.logs
+
+# IntelliJ
+*.iml
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
