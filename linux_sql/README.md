@@ -9,23 +9,24 @@ This project is intended for infrastructure teams, data engineers, and platform 
 
 ---
 
-## Architecture
-The system follows a distributed agent-based architecture. Each Linux host runs local monitoring scripts that collect system metrics and hardware information. These agents send data to a centralized PostgreSQL database, which serves as the single source of truth.
+## Quick Start
 
-The architecture supports multiple Linux hosts connecting to a single database instance, enabling horizontal scalability as new nodes are added.
+```bash
+# Start PostgreSQL using Docker
+./scripts/psql_docker.sh start
 
+# Create database tables
+psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
 
+# Insert hardware specifications (run once per host)
+./scripts/host_info.sh localhost 5432 host_agent postgres password
+
+# Insert resource usage data (manual run)
+./scripts/host_usage.sh localhost 5432 host_agent postgres password
+
+# Configure cron job for continuous monitoring
+crontab -e
+```
 
 ---
 
-## Quick Start
-
-### 1. Start PostgreSQL using Docker
-```bash
-./scripts/psql_docker.sh start
-```
-
-## Create Database Tables
-```bash
-psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
-```
