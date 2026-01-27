@@ -31,6 +31,19 @@ Example cron entry:
 ```bash
 * * * * * /bin/bash /home/rocky/dev/jarvis_data_eng_Singh/linux_sql/scripts/host_usage.sh localhost 5432 host_agent postgres password >> /home/rocky/dev/jarvis_data_eng_Singh/linux_sql/logs/host_usage.log 2>&1
 ```
+---
+
+## Implementation
+
+This project is implemented using Bash scripts for data collection and SQL for data persistence. Automation is achieved through Docker for database provisioning and Linux cron for scheduled execution. The design emphasizes simplicity, clarity, and reproducibility.
 
 ---
 
+## Architecture
+
+The system follows a distributed agent-based architecture. Each Linux host runs a local monitoring agent that collects system metrics and sends them to a centralized PostgreSQL database. The database acts as the single source of truth for both hardware specifications and runtime usage data.
+Multiple Linux hosts can connect to the same database instance, allowing the system to scale horizontally. PostgreSQL runs inside a Docker container to ensure consistent deployment across environments.
+
+An architecture diagram showing three Linux hosts, monitoring agents, and a centralized database was created using draw.io and is stored in the assets/ directory.
+
+---
