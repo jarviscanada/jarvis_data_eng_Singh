@@ -114,4 +114,10 @@ The application was deployed using Git for version control, Docker to provision 
 ---
 
 ## Improvements
+Potential future improvements include
+
+* Add automatic detection of hardware configuration changes
+* Implement alerting for abnormal resource usage patterns
+* Introduce data retention and cleanup policies
+* Improve error handling and logging across scripts
 
