@@ -47,3 +47,6 @@ Multiple Linux hosts can connect to the same database instance, allowing the sys
 An architecture diagram showing three Linux hosts, monitoring agents, and a centralized database was created using draw.io and is stored in the assets/ directory.
 
 ---
+
+## Scripts
+
