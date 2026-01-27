@@ -30,3 +30,27 @@ crontab -e
 Crontab entry
 * * * * * /home/rocky/dev/jarvis_data_eng_Singh/linux_sql/scripts/host_usage.sh localhost 5432 host_agent postgres password >> /home/rocky/dev/jarvis_data_eng_Singh/linux_sql/logs/host_usage.log 2>&1
 
+
+## Implementation
+
+This project is implemented using Bash scripts to collect system-level metrics and SQL to persist and analyze the collected data. Automation is achieved through Docker for database provisioning and Linux cron for scheduled execution of monitoring scripts. The overall design focuses on simplicity, portability, and reliability.
+
+### Architecture
+
+The system follows a distributed, agent-based architecture. Each Linux host runs lightweight monitoring agents that collect hardware specifications and runtime resource usage metrics locally. These agents send the collected data to a centralized PostgreSQL database, which acts as the single source of truth.
+
+The architecture supports multiple Linux hosts connecting to a single database instance, allowing the system to scale horizontally as additional nodes are added. PostgreSQL is deployed inside a Docker container to ensure a consistent and reproducible database environment across different setups.
+
+An architecture diagram illustrating multiple Linux hosts, monitoring agents, and a centralized PostgreSQL database was created using draw.io and is stored in the `assets/` directory.
+
+### Scripts
+
+#### `psql_docker.sh`
+
+This script manages the PostgreSQL Docker container and handles database startup and shutdown. It abstracts Docker commands and simplifies database provisioning.
+
+```bash
+./scripts/psql_docker.sh start
+./scripts/psql_docker.sh stop
+
+
