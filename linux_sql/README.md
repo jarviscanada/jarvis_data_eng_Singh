@@ -27,6 +27,10 @@ psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
 # Configure cron job for continuous monitoring
 crontab -e
 ```
+Example cron entry:
+```bash
+* * * * * /bin/bash /home/rocky/dev/jarvis_data_eng_Singh/linux_sql/scripts/host_usage.sh localhost 5432 host_agent postgres password >> /home/rocky/dev/jarvis_data_eng_Singh/linux_sql/logs/host_usage.log 2>&1
+```
 
 ---
 
