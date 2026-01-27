@@ -49,4 +49,69 @@ An architecture diagram showing three Linux hosts, monitoring agents, and a cent
 ---
 
 ## Scripts
+`psql_docker.sh`
+Manages the PostgreSQL database using Docker. This script simplifies database startup and shutdown and ensures a consistent runtime environment.
+```bash
+./scripts/psql_docker.sh start
+./scripts/psql_docker.sh stop
+```
+`host_info.sh`
+Collects static hardware information such as CPU configuration, memory size, and hostname. Since hardware rarely changes, this script is executed once per host.
+```bash
+./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password
+```
+`host_usage.sh`
+Collects dynamic system metrics including memory usage, CPU utilization, disk I/O, and available disk space. This script is designed to run repeatedly.
+```bash
+./scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password
+```
+`crontab`
+Linux cron is used to automate execution of host_usage.sh every minute, enabling continuous monitoring without manual intervention.
+
+`queries.sql`
+Contains analytical SQL queries that support operational analysis, such as identifying resource-intensive hosts and calculating average resource usage over time.
+
+---
+
+## Database Modeling
+
+`host_info`
+| Column Name      | Description                     |
+| ---------------- | ------------------------------- |
+| id               | Unique identifier for each host |
+| hostname         | Fully qualified hostname        |
+| cpu_number       | Number of CPU cores             |
+| cpu_architecture | CPU architecture type           |
+| cpu_model        | CPU model name                  |
+| cpu_mhz          | CPU speed in MHz                |
+| l2_cache         | L2 cache size (KB)              |
+| total_mem        | Total memory (KB)               |
+| timestamp        | Record creation time (UTC)      |
+
+`host_usage`
+| Column Name    | Description                     |
+| -------------- | ------------------------------- |
+| timestamp      | Time of metric collection (UTC) |
+| host_id        | Reference to host_info table    |
+| memory_free    | Free memory (MB)                |
+| cpu_idle       | CPU idle percentage             |
+| cpu_kernel     | CPU kernel usage percentage     |
+| disk_io        | Disk I/O in progress            |
+| disk_available | Available disk space (MB)       |
+
+---
+
+## Test
+The Bash scripts and database DDL were tested manually on a Linux virtual machine. Testing steps included verifying database and table creation, validating schema definitions, executing scripts manually, and confirming successful data insertion.
+
+Cron execution was validated by observing continuous row growth in the `host_usage` table and reviewing log files to ensure scripts executed successfully at one-minute intervals.
+
+---
+
+## Deployment
+The application was deployed using Git for version control, Docker to provision the PostgreSQL database, and Linux cron for task automation. Monitoring scripts were executed directly on the Linux host, and scheduled cron jobs enabled continuous data collection without manual execution.
+
+---
+
+## Improvements
 
