@@ -23,5 +23,9 @@ The architecture supports multiple Linux hosts connecting to a single database i
 ### 1. Start PostgreSQL using Docker
 ```bash
 ./scripts/psql_docker.sh start
+```
 
 ## Create Database Tables
+```bash
+psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
+```
