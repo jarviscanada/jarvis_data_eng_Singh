@@ -45,6 +45,8 @@ The system follows a distributed agent-based architecture. Each Linux host runs 
 Multiple Linux hosts can connect to the same database instance, allowing the system to scale horizontally. PostgreSQL runs inside a Docker container to ensure consistent deployment across environments.
 
 An architecture diagram showing three Linux hosts, monitoring agents, and a centralized database was created using draw.io and is stored in the assets/ directory.
+![Architecture Diagram](./assets/architecture.png)
+
 
 ---
 
