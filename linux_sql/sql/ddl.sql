@@ -1,4 +1,5 @@
 -- ddl.sql: create tables for Linux Cluster Monitoring (run against host_agent)
+\c host_agent;
 
 CREATE TABLE IF NOT EXISTS host_info (
   id SERIAL PRIMARY KEY,
