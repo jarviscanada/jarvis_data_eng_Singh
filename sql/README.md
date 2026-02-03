@@ -1,7 +1,9 @@
 # Introduction
 
-This folder contains my SQL practice for the RDBMS & SQL module.
-I will store answers as SQL snippets here and keep full query solutions in `queries.sql`.
+This folder contains my PostgreSQL SQL practice for the RDBMS & SQL module. The goal of this work is to build strong fundamentals by solving a structured set of real-world style exercises using the `cd.members`, `cd.facilities`, and `cd.bookings` tables. The solutions cover CRUD operations, filtering, joins (including self-joins and subqueries), aggregation with `GROUP BY`/`HAVING`, window functions (such as `ROW_NUMBER()` and `COUNT() OVER()`), and common string operations.
+
+Each question is documented in this README with a formatted SQL snippet, while the complete set of solutions is also stored in `queries.sql` for quick execution and review. This makes it easy for a reviewer to verify correctness, understand the approach, and assess SQL competency in a consistent, readable format.
+
 
 # SQL Queries
 
