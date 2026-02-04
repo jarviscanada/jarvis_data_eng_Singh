@@ -5,10 +5,15 @@ This folder contains my PostgreSQL SQL practice for the RDBMS & SQL module. The 
 Each question is documented in this README with a formatted SQL snippet, while the complete set of solutions is also stored in `queries.sql` for quick execution and review. This makes it easy for a reviewer to verify correctness, understand the approach, and assess SQL competency in a consistent, readable format.
 
 
-# SQL Queries
+###### Table Setup (DDL)
 
+The `cd.members`, `cd.facilities`, and `cd.bookings` tables were created by loading the official pgExercises sample dataset (`clubdata.sql`) into PostgreSQL.
 
-> Add any DDL (CREATE/ALTER) you use here (if required by questions).
+```bash
+cd ~/dev/jarvis_data_eng_Singh/sql
+export PGPASSWORD='password'
+psql -h localhost -U postgres -d postgres -f clubdata.sql
+```
 
 ###### Question 1: Show all members
 
