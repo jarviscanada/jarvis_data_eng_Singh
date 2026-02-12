@@ -20,3 +20,18 @@ target/
 
 # OS
 .DS_Store
+
+# Python Data Analytics (Jupyter runtime/artifacts)
+python_data_analytics/.cache/
+python_data_analytics/.config/
+python_data_analytics/.ipynb_checkpoints/
+python_data_analytics/.ipython/
+python_data_analytics/.jupyter/
+python_data_analytics/.local/
+python_data_analytics/.npm/
+
+# Large dataset dumps (download at runtime)
+python_data_analytics/psql/retail.sql
+
+# Jupyter checkpoints
+**/.ipynb_checkpoints/
