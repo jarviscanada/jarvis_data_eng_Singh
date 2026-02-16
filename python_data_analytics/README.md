@@ -127,7 +127,7 @@ Using this model, customers are segmented into groups such as:
 - Potential Loyalists
 - New Customers
 
-? Marketing Impact:
+# Marketing Impact:
 
 High Recency + High Frequency + High Monetary  
 - VIP treatment & retention programs
