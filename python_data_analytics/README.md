@@ -68,7 +68,7 @@ This architecture ensures:
 ## Data Analytics and Wrangling
 
 Notebook Link:  
-[Retail Data Analytics Notebook](.python_data_analytics/python_data_wrangling/retail_data_analytics_wrangling.ipynb)
+[Retail Data Analytics Notebook](python_data_analytics/python_data_wrangling/retail_data_analytics_wrangling.ipynb)
 
 
 ### Data Preparation
