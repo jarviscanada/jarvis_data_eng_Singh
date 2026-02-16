@@ -35,3 +35,7 @@ python_data_analytics/psql/retail.sql
 
 # Jupyter checkpoints
 **/.ipynb_checkpoints/
+
+# Data files (local only)
+python_data_analytics/python_data_wrangling/data/online_retail_II.csv
+python_data_analytics/data/
