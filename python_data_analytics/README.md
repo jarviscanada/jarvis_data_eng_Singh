@@ -68,9 +68,10 @@ This architecture ensures:
 ## Data Analytics and Wrangling
 
 Notebook Link:  
-[Retail Data Analytics Notebook](./python_data_analytics/python_data_wrangling/retail_data_analytics_wrangling.ipynb)
+[Retail Data Analytics Notebook](.python_data_analytics/python_data_wrangling/retail_data_analytics_wrangling.ipynb)
 
-### 1?? Data Preparation
+
+### Data Preparation
 
 - Standardized column names (snake_case)
 - Converted datatypes (datetime, numeric)
@@ -81,7 +82,7 @@ Notebook Link:
 
 ---
 
-### 2?? Sales & Revenue Analysis
+###  Sales & Revenue Analysis
 
 - Monthly Sales Trend
 - Monthly Sales Growth (%)
@@ -89,33 +90,33 @@ Notebook Link:
 - Distribution of invoice amounts
 - Outlier handling
 
-? Business Value:
+ Business Value:
 - Detect seasonal spikes
 - Evaluate campaign effectiveness
 - Monitor revenue stability
 
 ---
 
-### 3?? Customer Behavior Analysis
+###  Customer Behavior Analysis
 
 - Monthly Active Users
 - New vs Existing Users
 - Order Placement vs Cancellation Trends
 
-? Business Value:
+ Business Value:
 - Identify growth momentum
 - Measure retention quality
 - Detect churn risk periods
 
 ---
 
-### 4?? RFM (Recency, Frequency, Monetary) Analysis
+### RFM (Recency, Frequency, Monetary) Analysis
 
 RFM segmentation categorizes customers based on behavioral patterns:
 
-Recency ? How recently a customer purchased  
-Frequency ? How often a customer purchases  
-Monetary ? Total spending value  
+Recency - How recently a customer purchased  
+Frequency - How often a customer purchases  
+Monetary - Total spending value  
 
 Using this model, customers are segmented into groups such as:
 
