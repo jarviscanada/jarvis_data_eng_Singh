@@ -159,20 +159,12 @@ The analytics output directly supports:
 ---
 
 # Improvements
-
 If given additional time, I would enhance the project by:
+
 * Automating ETL: Convert notebook logic into scheduled ETL jobs using Airflow.
-
-* Predictive Modeling  
-Add churn prediction and customer lifetime value (CLV) forecasting.
-
-* Interactive Dashboard  
-Build a Streamlit or Power BI dashboard for non-technical stakeholders.
-
-* CI/CD Pipeline  
-Integrate automated testing and deployment workflow.
-
-* Cloud Deployment  
-Deploy analytics pipeline on Azure/GCP for scalability.
+* Predictive Modeling: Add churn prediction and customer lifetime value (CLV) forecasting.
+* Interactive Dashboard: Build a Streamlit or Power BI dashboard for non-technical stakeholders.
+* CI/CD Pipeline: Integrate automated testing and deployment workflow.
+* Cloud Deployment: Deploy analytics pipeline on Azure/GCP for scalability.
 
 
