@@ -130,13 +130,13 @@ Using this model, customers are segmented into groups such as:
 ? Marketing Impact:
 
 High Recency + High Frequency + High Monetary  
-? VIP treatment & retention programs
+- VIP treatment & retention programs
 
 High Monetary but High Recency  
-? Aggressive win-back campaigns
+- Aggressive win-back campaigns
 
 Low Frequency + Low Monetary  
-? Nurture & upsell strategies
+- Nurture & upsell strategies
 
 This enables targeted marketing instead of generic promotions, improving ROI and retention.
 
