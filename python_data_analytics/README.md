@@ -145,20 +145,15 @@ This enables targeted marketing instead of generic promotions, improving ROI and
 # How This Increases LGS Revenue
 
 The analytics output directly supports:
-
-1. Customer Retention Optimization  
+* Customer Retention Optimization  
    Identify and re-engage at-risk customers before churn.
-
-2. Revenue Expansion  
+* Revenue Expansion  
    Upsell high-value customers through loyalty programs.
-
-3. Marketing Budget Efficiency  
+* Marketing Budget Efficiency  
    Segment-based campaigns instead of mass discounts.
-
-4. Growth Monitoring  
+* Growth Monitoring  
    Track monthly growth and customer acquisition trends.
-
-5. Strategic Planning  
+* Strategic Planning  
    Identify peak sales periods for inventory and marketing alignment.
 
 ---
@@ -166,20 +161,18 @@ The analytics output directly supports:
 # Improvements
 
 If given additional time, I would enhance the project by:
+* Automating ETL: Convert notebook logic into scheduled ETL jobs using Airflow.
 
-1?? Automating ETL  
-Convert notebook logic into scheduled ETL jobs using Airflow.
-
-2?? Predictive Modeling  
+* Predictive Modeling  
 Add churn prediction and customer lifetime value (CLV) forecasting.
 
-3?? Interactive Dashboard  
+* Interactive Dashboard  
 Build a Streamlit or Power BI dashboard for non-technical stakeholders.
 
-4?? CI/CD Pipeline  
+* CI/CD Pipeline  
 Integrate automated testing and deployment workflow.
 
-5?? Cloud Deployment  
+* Cloud Deployment  
 Deploy analytics pipeline on Azure/GCP for scalability.
 
 
