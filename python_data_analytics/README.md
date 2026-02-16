@@ -6,11 +6,12 @@ This project builds a containerized retail analytics environment that transforms
 
 The objective is to help LGS:
 
-- Understand monthly revenue trends
-- Identify customer growth and churn patterns
-- Segment customers by value
-- Design precision marketing campaigns
-- Increase retention and lifetime value
+* Understand monthly revenue trends
+* Identify customer growth and churn patterns
+* Segment customers by value
+* Design precision marketing campaigns
+* Increase retention and lifetime value
+---
 
 Technologies Used:
 
