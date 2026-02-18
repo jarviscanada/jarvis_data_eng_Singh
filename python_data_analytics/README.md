@@ -31,6 +31,10 @@ Technologies Used:
 ## Project Architecture
 
 The architecture follows a separation-of-concerns design that isolates analytics from production systems.
+## 🏗️ System Architecture
+
+![System Architecture](./assets/architecture.png)
+
 
 ### Data Flow
 
