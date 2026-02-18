@@ -33,6 +33,9 @@ Technologies Used:
 The architecture follows a separation-of-concerns design that isolates analytics from production systems.
 ## 🏗️ System Architecture
 
+![System Architecture](./assets/diagram_Data%20Analytics%20System%20Architecture_.png)
+
+
 ![System Architecture](.python_data_analytics/assets/diagram_Data Analytics System Architecture_.png)
 
 
