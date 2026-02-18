@@ -37,7 +37,6 @@ The architecture follows a separation-of-concerns design that isolates analytics
 
 
 
-
 ### Data Flow
 
 1. LGS Web Application  
