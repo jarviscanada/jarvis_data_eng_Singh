@@ -68,7 +68,8 @@ This architecture ensures:
 ## Data Analytics and Wrangling
 
 Notebook Link:  
-[Retail Data Analytics Notebook](https://github.com/jarviscanada/jarvis_data_eng_Singh/blob/8091207913f88d1cb1c9d5fffa479cbd8f34c61e/python_data_analytics/python_data_wrangling/retail_data_analytics_wrangling.ipynb)
+📓 **Notebook Link:**  
+[Retail Data Analytics Notebook](./python_data_analytics/python_data_wrangling/retail_data_analytics_wrangling.ipynb)
 
 
 ### Data Preparation
