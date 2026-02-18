@@ -1,7 +1,6 @@
 # Introduction
 
 London Gift Shop (LGS) is a UK-based online retailer generating high volumes of transactional data through its web platform. While the company collects extensive sales and customer data, raw transaction logs alone do not provide actionable business insight.
-
 This project builds a containerized retail analytics environment that transforms transactional data into structured business intelligence. By implementing data wrangling, KPI reporting, customer behavior analysis, and RFM segmentation, this proof-of-concept enables LGS to transition from reactive reporting to data-driven marketing and revenue optimization.
 
 The objective is to help LGS:
@@ -36,7 +35,7 @@ The architecture follows a separation-of-concerns design that isolates analytics
 ![System Architecture](./assets/diagram_Data%20Analytics%20System%20Architecture_.png)
 
 
-![System Architecture](.python_data_analytics/assets/diagram_Data Analytics System Architecture_.png)
+
 
 
 ### Data Flow
