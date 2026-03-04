@@ -39,3 +39,7 @@ python_data_analytics/psql/retail.sql
 # Data files (local only)
 python_data_analytics/python_data_wrangling/data/online_retail_II.csv
 python_data_analytics/data/
+
+# ===== Java / Maven =====
+**/target/
+**/out/
