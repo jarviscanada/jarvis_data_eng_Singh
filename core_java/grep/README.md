@@ -30,7 +30,7 @@ cat ./out/grep.out
 
 # Implementation
 
-##Pseudocode
+## Pseudocode
 ```bash
 process():
   matchedLines = []
