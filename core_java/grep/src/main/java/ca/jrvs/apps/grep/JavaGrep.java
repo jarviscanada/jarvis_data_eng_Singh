@@ -1,7 +1,7 @@
 package ca.jrvs.apps.grep;
 
 import java.io.IOException;
-import java.util.List;
+import java.util.stream.Stream;
 
 public interface JavaGrep {
 
@@ -15,11 +15,11 @@ public interface JavaGrep {
 
   void process() throws IOException;
 
-  List<String> readLines(String inputFile) throws IOException;
+  Stream<String> readLines(String inputFile) throws IOException;
 
-  List<String> listFiles(String rootDir) throws IOException;
+  Stream<String> listFiles(String rootDir) throws IOException;
 
   boolean containsPattern(String line);
 
-  void writeToFile(List<String> lines) throws IOException;
+  void writeToFile(Stream<String> lines) throws IOException;
 }
