@@ -2,12 +2,12 @@ package ca.jrvs.apps.grep;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,7 +18,6 @@ public class JavaGrepImp implements JavaGrep {
   private String regex;
   private String rootPath;
   private String outFile;
-
   private Pattern pattern;
 
   @Override
@@ -63,60 +62,70 @@ public class JavaGrepImp implements JavaGrep {
 
     logger.info("Starting JavaGrep: regex={}, rootPath={}, outFile={}", regex, rootPath, outFile);
 
-    List<String> matchedLines = new ArrayList<>();
-
-    for (String file : listFiles(rootPath)) {
-      for (String line : readLines(file)) {
-        if (containsPattern(line)) {
-          matchedLines.add(line);
-        }
-      }
+    try (Stream<String> matchedLines = listFiles(rootPath)
+        .flatMap(file -> {
+          try {
+            return readLines(file);
+          } catch (IOException e) {
+            throw new UncheckedIOException("Failed to read file: " + file, e);
+          }
+        })
+        .filter(this::containsPattern)) {
+      writeToFile(matchedLines);
+    } catch (UncheckedIOException e) {
+      throw e.getCause();
     }
 
-    writeToFile(matchedLines);
-    logger.info("JavaGrep finished. Matched lines={}", matchedLines.size());
+    logger.info("JavaGrep finished.");
   }
 
   @Override
-  public List<String> readLines(String inputFile) throws IOException {
-    return Files.readAllLines(Paths.get(inputFile));
+  public Stream<String> readLines(String inputFile) throws IOException {
+    return Files.lines(Paths.get(inputFile));
   }
 
   @Override
-  public List<String> listFiles(String rootDir) throws IOException {
+  public Stream<String> listFiles(String rootDir) throws IOException {
     Path root = Paths.get(rootDir);
 
     if (!Files.exists(root)) {
       throw new IllegalArgumentException("rootPath does not exist: " + rootDir);
     }
 
-    List<String> files = new ArrayList<>();
-    Files.walk(root)
+    return Files.walk(root)
         .filter(Files::isRegularFile)
-        .forEach(p -> files.add(p.toString()));
-
-    return files;
+        .map(Path::toString);
   }
 
   @Override
   public boolean containsPattern(String line) {
-    if (line == null) return false;
+    if (line == null) {
+      return false;
+    }
     return pattern.matcher(line).find();
   }
 
   @Override
-  public void writeToFile(List<String> lines) throws IOException {
+  public void writeToFile(Stream<String> lines) throws IOException {
     Path outPath = Paths.get(outFile);
-
     Path parent = outPath.getParent();
+
     if (parent != null && !Files.exists(parent)) {
       Files.createDirectories(parent);
     }
 
     try (BufferedWriter writer = Files.newBufferedWriter(outPath)) {
-      for (String line : lines) {
-        writer.write(line);
-        writer.newLine();
+      try {
+        lines.forEach(line -> {
+          try {
+            writer.write(line);
+            writer.newLine();
+          } catch (IOException e) {
+            throw new UncheckedIOException(e);
+          }
+        });
+      } catch (UncheckedIOException e) {
+        throw e.getCause();
       }
     }
   }
