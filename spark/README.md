@@ -1,4 +1,5 @@
 # Retail Data Analytics Using Zeppelin and Databricks
+![Retail Analytics Architecture](./assets/arch.png)
 
 ## Introduction
 
@@ -60,6 +61,6 @@ Databricks notebook:
 
 ## Databricks Architecture
 
-Workflow:
-
-
+<p align="center">
+  <img src="./assets/arch.png" alt="Retail Analytics Architecture" width="900">
+</p> 
