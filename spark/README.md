@@ -1,3 +1,4 @@
+
 # Retail Data Analytics Using Zeppelin and Databricks
 
 ## Introduction
@@ -15,7 +16,7 @@ The dataset contains transactional retail records including:
 - Customer ID
 - Country
 
-Using this dataset, multiple business KPIs were generated along with customer segmentation analytics using **RFM modeling**.
+Using this dataset, multiple business KPIs were generated along with customer segmentation analytics using the **RFM model**.
 
 This project was implemented using two different analytics platforms:
 
@@ -35,9 +36,9 @@ Technologies used:
 
 ---
 
-# Databricks and Hadoop Implementation
+## Databricks and Hadoop Implementation
 
-## Dataset and Analytics Work
+### Dataset and Analytics Work
 
 Retail transaction data was loaded from PostgreSQL into Databricks using JDBC. The dataset was cleaned and transformed using PySpark DataFrame APIs before performing KPI analytics and customer segmentation.
 
@@ -58,8 +59,26 @@ Databricks notebook:
 
 ---
 
-## Databricks Architecture
+### Databricks Architecture
+
+<p align="center">
+  <img src="./assets/arch.png" alt="Retail Analytics Architecture" width="900">
+</p>
 
 Workflow:
 
-
+```text
+PostgreSQL Retail Dataset
+        |
+        | JDBC Connection
+        v
+Databricks Notebook
+        |
+        v
+PySpark Data Cleaning
+        |
+        v
+KPI Analytics
+        |
+        v
+Customer Segmentation (RFM Model)
