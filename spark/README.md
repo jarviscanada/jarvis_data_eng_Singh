@@ -12,36 +12,41 @@ Databricks using PySpark (cloud Spark environment)
 
 The goal of this project is to design a scalable analytics workflow that supports KPI generation, customer behaviour analysis, and segmentation using Spark-based processing pipelines.
 
-The dataset contains retail transaction records including:
+The dataset contains retail transaction records, including:
 
 * Invoice Number
-Product Description
-Quantity
-Invoice Date
-Unit Price
-Customer ID
-Country
+* Product Description
+* Quantity
+* Invoice Date
+* Unit Price
+* Customer ID
+* Country
 
 Using this dataset, several business analytics workflows were implemented including:
 
-Monthly sales trend analysis
-Customer activity tracking
-Cancelled vs completed order comparison
-Country-level revenue insights
-Customer segmentation using the RFM model
+* Monthly sales trend analysis
+* Customer activity tracking
+* Cancelled vs completed order comparison
+* Country-level revenue insights
+* Customer segmentation using the RFM model
 
 Technologies used:
 
-PostgreSQL (transactional dataset source)
-Hadoop Distributed File System (HDFS)
-Apache Zeppelin
-Databricks
-PySpark DataFrame API
-Spark SQL
-Hive Metastore
-JDBC ingestion
-Git & GitHub
+* PostgreSQL (transactional dataset source)
+* Hadoop Distributed File System (HDFS)
+* GCP dataproc
+* Apache Zeppelin
+* Databricks
+* PySpark DataFrame API
+* Spark SQL
+* Hive Metastore
+* JDBC ingestion
+* Git & GitHub
 
+### This project was implemented using two different analytics platforms:
+
+1. Apache Zeppelin on Hadoop (GCP Dataproc)
+2. Databricks using PySpark DataFrame API
 
 
 
