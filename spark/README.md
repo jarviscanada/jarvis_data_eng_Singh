@@ -72,7 +72,8 @@ The following analytics workflows were implemented:
 * Invoice value distribution analysis
 * Customer segmentation using the RFM model
 
-Notenook: [Retail Data Analytics with PySpark Notebook](./notebook/Retail%20Data%20Analytics%20with%20PySpark.ipynb)
+Notenook: [Retail Data Analytics with PySpark Notebook](./notebook/Retail%20Data%20Analytics%20with%20PySpark.ipynb) 
+[Retail Data Analytics with PySpark Notebook](./spark/notebook/Retail%20Data%20Analytics%20with%20PySpark.ipynb)
 
 
 ### Zeppelin and Hadoop Implementation
