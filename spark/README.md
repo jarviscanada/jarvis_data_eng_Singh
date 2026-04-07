@@ -82,9 +82,7 @@ The same Online Retail transactional dataset was analyzed in the Apache Zeppelin
 
 Retail transaction data was ingested into the Zeppelin environment using both CSV ingestion into HDFS and JDBC ingestion from PostgreSQL, enabling scalable distributed processing using Spark on Hadoop.
 
-Notebook: [Retail Data Analytics Zeppelin Notebook](./spark/notebook/Spark%20Dataframe%20-%20WDI%20Data%20Analytics.zpln)
-note 2 :  [Retail Data Analytics Zeppelin Notebook](./notebook/Spark%20Dataframe%20-%20WDI%20Data%20Analytics.zpln)
-noet 3:   [Retail Data Analytics Zeppelin Notebook](./spark/notebook/Spark%20Dataframe%20-%20WDI%20Data%20Analytics.zpln)
+Notebook:  [Retail Data Analytics Zeppelin Notebook](./notebook/Spark%20Dataframe%20-%20WDI%20Data%20Analytics.zpln)
 
 ### Future Improvement
 
