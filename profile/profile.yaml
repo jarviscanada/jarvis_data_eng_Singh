@@ -39,16 +39,16 @@ jarvis_projects:
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
   - name: "Linux Cluster Resource Monitoring App"
-    git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/6fc4d209ad8d12396fd2b6aca3d983b0e95d83ab/linux_sql"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/main/linux_sql"
     description: "Designed and implemented a lightweight Linux cluster monitoring system using Bash scripts and crontab to collect hardware specifications and real-time CPU and memory utilization metrics. Stored collected telemetry in a PostgreSQL database running inside Docker and developed SQL-based analytics queries to support capacity planning and performance monitoring. Automated scheduling and deployment to enable reliable, low-overhead monitoring across distributed environments."
   - name: "PostgreSQL Club Booking Database System"
-    git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/6fc4d209ad8d12396fd2b6aca3d983b0e95d83ab/sql"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/main/sql"
     description: " Designed and implemented a normalized relational database system for a recreational club booking platform using PostgreSQL. Created schemas, constraints, and relationships using DDL statements and developed advanced SQL queries leveraging joins, aggregations, subqueries, and window functions to generate operational insights. Containerized the database environment using Docker and automated deployment with Bash scripts to improve portability and reproducibility across environments."
   - name: "Retail Data Wrangling and Analytics"
-    git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/6fc4d209ad8d12396fd2b6aca3d983b0e95d83ab/python_data_analytics"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/main/python_data_analytics"
     description: "Developed a retail analytics solution to analyze customer purchasing behavior using Python, Pandas, SQLAlchemy, PostgreSQL, and Jupyter Notebook. Performed data cleaning, transformation, and exploratory analysis on transactional datasets and applied RFM segmentation and monthly sales trend analysis to generate customer-level insights. Delivered analytics-ready datasets and data-driven marketing recommendations to support customer retention strategies and campaign targeting."
   - name: "Java Grep Application"
-    git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/6fc4d209ad8d12396fd2b6aca3d983b0e95d83ab/core_java"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/main/core_java"
     description: "Developed a command-line text search application in Java 8 that replicates core Linux grep functionality by recursively scanning directories for pattern-based matches using regular expressions. Implemented a functional programming approach using Lambda expressions and the Stream API to improve processing efficiency and memory usage through lazy evaluation. Integrated SLF4J for logging and Maven for dependency management, and packaged the application within a Dockerized environment to enable portable execution across systems while supporting scalable processing of large directory structures."
 
 
