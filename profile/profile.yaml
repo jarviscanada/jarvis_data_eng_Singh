@@ -1,110 +1,100 @@
 # Preferred name (Characters only)
 name: "Prabhat Kumar Singh"
 # Your GitHub repo root URL
-github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_demo
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_Singh
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
+summary: Data Engineer with 2 years of experience building scalable data pipelines and reporting solutions for Fortune 500 clients. Experienced in designing ETL workflows and transforming large-scale datasets using Python, SQL, Spark, and Databricks across Azure and AWS cloud environments. Delivered analytics-ready datasets supporting business intelligence and enterprise reporting use cases. Holds a Bachelor?s degree in Computer Science and a postgraduate specialization in Artificial Intelligence. Completed hands-on distributed data engineering projects through Jarvis training including Linux monitoring agents, retail analytics pipelines, and Spark-based processing on GCP Dataproc. Strong foundation in data modeling, cloud-based analytics platforms, and modern pipeline orchestration tools including  dbt, and Docker. 
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
 skills:
   # At least 5 skills
   proficient:
-    - Java
-    - Linux/Bash
-    - RDBMS/SQL
-    - Agile/Scrum
-    - Git
+    - Python
+    - AWS
+    - Azure Data Platform
+    - Databricks
+    - Pyspark
+    - Sql 
   # At least 5 skills
   competent:
-    - Donec
-    - fermentum
-    - Donec
-    - fermentum
-    - Donec
+    - dbt
+    - Docker
+    - PostgreSQL
+    - Data Modeling
+    - ETL Pipeline Development
+    - Machine Learning(Regression/Clustering)
   # At least 5 skills
   familiar:
-    - Donec
-    - fermentum
-    - fermentum
-    - fermentum
-    - fermentum
+    - Hadoop/HDFS
+    - GCP Dataproc
+    - Java
+    - Kafka
+    - Financial Reporting/Financial Forcasting 
 
 # List of Jarvis projects
 jarvis_projects:
-  - name: "Cluster Monitor"
-    git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
-  - name: "Core Java Apps"
-    git_url: "/core_java"
-    description:
-      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-  - name: "Springboot App"
-    git_url: "/springboot"
-    description: ""
-  - name: "Python Data Analytics"
-    git_url: "/python_data_anlytics"
-    description: ""
-  - name: "Hadoop"
-    git_url: "/hadoop"
-    description: ""
-  - name: "Spark"
-    git_url: "/spark"
-    description: ""
-  - name: "Cloud/DevOps"
-    git_url: "/cloud_devops"
-    description: ""
+  - name: "Linux Cluster Resource Monitoring App"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/6fc4d209ad8d12396fd2b6aca3d983b0e95d83ab/linux_sql"
+    description: "Designed and implemented a lightweight Linux cluster monitoring system using Bash scripts and crontab to collect hardware specifications and real-time CPU and memory utilization metrics. Stored collected telemetry in a PostgreSQL database running inside Docker and developed SQL-based analytics queries to support capacity planning and performance monitoring. Automated scheduling and deployment to enable reliable, low-overhead monitoring across distributed environments."
+  - name: "PostgreSQL Club Booking Database System"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/6fc4d209ad8d12396fd2b6aca3d983b0e95d83ab/sql"
+    description: " Designed and implemented a normalized relational database system for a recreational club booking platform using PostgreSQL. Created schemas, constraints, and relationships using DDL statements and developed advanced SQL queries leveraging joins, aggregations, subqueries, and window functions to generate operational insights. Containerized the database environment using Docker and automated deployment with Bash scripts to improve portability and reproducibility across environments."
+  - name: "Retail Data Wrangling and Analytics"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/6fc4d209ad8d12396fd2b6aca3d983b0e95d83ab/python_data_analytics"
+    description: "Developed a retail analytics solution to analyze customer purchasing behavior using Python, Pandas, SQLAlchemy, PostgreSQL, and Jupyter Notebook. Performed data cleaning, transformation, and exploratory analysis on transactional datasets and applied RFM segmentation and monthly sales trend analysis to generate customer-level insights. Delivered analytics-ready datasets and data-driven marketing recommendations to support customer retention strategies and campaign targeting."
+  - name: "Java Grep Application"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/6fc4d209ad8d12396fd2b6aca3d983b0e95d83ab/core_java"
+    description: "Developed a command-line text search application in Java 8 that replicates core Linux grep functionality by recursively scanning directories for pattern-based matches using regular expressions. Implemented a functional programming approach using Lambda expressions and the Stream API to improve processing efficiency and memory usage through lazy evaluation. Integrated SLF4J for logging and Maven for dependency management, and packaged the application within a Dockerized environment to enable portable execution across systems while supporting scalable processing of large directory structures."
+
 
 # List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
     #project name
-  - name: "Web app for resturant"
+  - name: "LangChain-FinanceGPT"
     #URL is optional
-    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
+    git_url: "https://github.com/p4prabhu/LangChain-FinanceGPT"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
-  - name: "Machine Learning"
-    git_url:
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+    description: Developed an AI-powered financial question-answering system using LangChain, OpenAI embeddings, FAISS vector search, and Flask to enable natural language querying of company annual reports. Implemented document ingestion pipelines to process large financial PDFs into vector embeddings and built a retrieval-augmented generation workflow to deliver context-aware responses for investment research and financial analysis use cases.
+  - name: "Kubernetes for Data Engineering"
+    git_url: "https://github.com/p4prabhu/Kubernetes_Data_engineering"
+    description: Designed and deployed a containerized data engineering workflow using Docker and Kubernetes to orchestrate scalable data processing services across distributed environments. Implemented infrastructure configuration for automated service deployment, container lifecycle management, and environment portability to support reliable execution of analytics workloads in cloud-native architectures.
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
 #The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
 professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
-  - title: "Software Developer"
+  - title: "Data Engineer"
     company: "Jarvis"
-    duration: "2020-present"
+    duration: "2026-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
-  - title: "Tutor"
-    company: "XYZ Company"
-    duration: "2019"
-    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
+    description: "Designed and delivered analytics-focused data solutions including monitoring dashboards, relational reporting systems, and Python-based ETL pipelines for enterprise reporting use cases. Developed automated data ingestion workflows and advanced SQL queries to generate performance metrics and operational insights from large-scale datasets. Collaborated within Agile teams to manage and prioritize development tickets, translating business requirements into reliable data-driven deliverables that improved reporting accuracy and visibility across stakeholder groups."
+  - title: "Data Engineer"
+    company: "Decision Point Analytics"
+    duration: "Feb 2021-Dec 2022"
+    description: "Designed and delivered scalable data engineering and analytics solutions supporting Marketing Mix Modeling (MMM) and promotional analytics initiatives for Fortune 500 clients. Developed Python-based ETL pipelines and advanced SQL transformation workflows using Databricks across Azure and AWS cloud environments to process large-scale marketing and sales datasets. Automated data ingestion and validation workflows and produced analytics-ready datasets powering reporting dashboards and campaign performance measurement. Collaborated within Agile teams to translate business requirements into reliable data-driven deliverables that improved reporting accuracy, marketing attribution visibility, and decision-making across stakeholder groups."
 
 #List of edcuation
 education: 
-  - school_name: "XYZ university"
-    duration: "2012-2016"
-    degree: "Bachelor of Applied Sciences"
-    department: "Electrical and Computer Engineering"
+  - school_name: "SRM University"
+    duration: "2016-2020"
+    degree: "Bachelor of Computer Sciences"
+    department: "Computer Science"
     # optional
     awards_achievements: 
-      - "Scholarship"
-      - "Dean's List (2015, 2016): Ut enim ad minim veniam"
-      - "GPA: 3.8/4.0"
-  - school_name: "XYZ university"
-    duration: "2016-2018"
-    degree: "Master of Engineering"
-    department: "Electrical and Computer Engineering"
+      - "First Class with Distinction"
+  - school_name: "Georgian College"
+    duration: "2023-2024"
+    degree: "Postgraduate Certificate in Artificial Intelligence"
+    department: "School of Information Technology "
     awards_achievements: 
+      - "Dean's List"
 
 #Optional section
 others:
@@ -112,12 +102,10 @@ others:
   - title: "Certificates"
     #list of items
     bullets:
-      - "Udacity Machine Learning (2019)"
-  - title: "Awards"
-    bullets:
-      - "Winner"
-  - title: "Activities/Hobbies"
-    bullets:
-      - "Basketball player"
-      - "Competitive gaming"
-      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      - "Microsoft Certified: Azure Data Fundamentals"
+      - "Databricks Certified Data Engineer Associate"
+      - "IBM Data Science Professional Certificate"
+      - "Machine Learning with Python (IBM)"
+      - "Databases and SQL for Data Science with Python (IBM)"
+      - "Introduction to the Internet of Things (IoT)- Curtin University"
+  

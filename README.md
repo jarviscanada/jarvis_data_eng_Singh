@@ -1,64 +1,54 @@
 # Prabhat Kumar Singh . Jarvis Consulting
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
+Data Engineer with 2 years of experience building scalable data pipelines and reporting solutions for Fortune 500 clients. Experienced in designing ETL workflows and transforming large-scale datasets using Python, SQL, Spark, and Databricks across Azure and AWS cloud environments. Delivered analytics-ready datasets supporting business intelligence and enterprise reporting use cases. Holds a Bachelor?s degree in Computer Science and a postgraduate specialization in Artificial Intelligence. Completed hands-on distributed data engineering projects through Jarvis training including Linux monitoring agents, retail analytics pipelines, and Spark-based processing on GCP Dataproc. Strong foundation in data modeling, cloud-based analytics platforms, and modern pipeline orchestration tools including  dbt, and Docker.
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** Python, AWS, Azure Data Platform, Databricks, Pyspark, Sql
 
-**Competent:** Donec, fermentum, Donec, fermentum, Donec
+**Competent:** dbt, Docker, PostgreSQL, Data Modeling, ETL Pipeline Development, Machine Learning(Regression/Clustering)
 
-**Familiar:** Donec, fermentum, fermentum, fermentum, fermentum
+**Familiar:** Hadoop/HDFS, GCP Dataproc, Java, Kafka, Financial Reporting/Financial Forcasting
 
 ## Jarvis Projects
 
-Project source code: [https://github.com/jarviscanada/jarvis_data_eng_demo](https://github.com/jarviscanada/jarvis_data_eng_demo)
+Project source code: [https://github.com/jarviscanada/jarvis_data_eng_Singh](https://github.com/jarviscanada/jarvis_data_eng_Singh)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/linux_sql)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Linux Cluster Resource Monitoring App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/masterhttps://github.com/jarviscanada/jarvis_data_eng_Singh/tree/6fc4d209ad8d12396fd2b6aca3d983b0e95d83ab/linux_sql)]: Designed and implemented a lightweight Linux cluster monitoring system using Bash scripts and crontab to collect hardware specifications and real-time CPU and memory utilization metrics. Stored collected telemetry in a PostgreSQL database running inside Docker and developed SQL-based analytics queries to support capacity planning and performance monitoring. Automated scheduling and deployment to enable reliable, low-overhead monitoring across distributed environments.
 
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/core_java)]:
-      
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
+**PostgreSQL Club Booking Database System** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/masterhttps://github.com/jarviscanada/jarvis_data_eng_Singh/tree/6fc4d209ad8d12396fd2b6aca3d983b0e95d83ab/sql)]:  Designed and implemented a normalized relational database system for a recreational club booking platform using PostgreSQL. Created schemas, constraints, and relationships using DDL statements and developed advanced SQL queries leveraging joins, aggregations, subqueries, and window functions to generate operational insights. Containerized the database environment using Docker and automated deployment with Bash scripts to improve portability and reproducibility across environments.
 
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/springboot)]: Not Started
+**Retail Data Wrangling and Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/masterhttps://github.com/jarviscanada/jarvis_data_eng_Singh/tree/6fc4d209ad8d12396fd2b6aca3d983b0e95d83ab/python_data_analytics)]: Developed a retail analytics solution to analyze customer purchasing behavior using Python, Pandas, SQLAlchemy, PostgreSQL, and Jupyter Notebook. Performed data cleaning, transformation, and exploratory analysis on transactional datasets and applied RFM segmentation and monthly sales trend analysis to generate customer-level insights. Delivered analytics-ready datasets and data-driven marketing recommendations to support customer retention strategies and campaign targeting.
 
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/cloud_devops)]: Not Started
+**Java Grep Application** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/masterhttps://github.com/jarviscanada/jarvis_data_eng_Singh/tree/6fc4d209ad8d12396fd2b6aca3d983b0e95d83ab/core_java)]: Developed a command-line text search application in Java 8 that replicates core Linux grep functionality by recursively scanning directories for pattern-based matches using regular expressions. Implemented a functional programming approach using Lambda expressions and the Stream API to improve processing efficiency and memory usage through lazy evaluation. Integrated SLF4J for logging and Maven for dependency management, and packaged the application within a Dockerized environment to enable portable execution across systems while supporting scalable processing of large directory structures.
 
 
 ## Highlighted Projects
-**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**LangChain-FinanceGPT** [[GitHub](https://github.com/p4prabhu/LangChain-FinanceGPT)]: Developed an AI-powered financial question-answering system using LangChain, OpenAI embeddings, FAISS vector search, and Flask to enable natural language querying of company annual reports. Implemented document ingestion pipelines to process large financial PDFs into vector embeddings and built a retrieval-augmented generation workflow to deliver context-aware responses for investment research and financial analysis use cases.
 
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Kubernetes for Data Engineering** [[GitHub](https://github.com/p4prabhu/Kubernetes_Data_engineering)]: Designed and deployed a containerized data engineering workflow using Docker and Kubernetes to orchestrate scalable data processing services across distributed environments. Implemented infrastructure configuration for automated service deployment, container lifecycle management, and environment portability to support reliable execution of analytics workloads in cloud-native architectures.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2020-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Data Engineer, Jarvis (2026-present)**: Designed and delivered analytics-focused data solutions including monitoring dashboards, relational reporting systems, and Python-based ETL pipelines for enterprise reporting use cases. Developed automated data ingestion workflows and advanced SQL queries to generate performance metrics and operational insights from large-scale datasets. Collaborated within Agile teams to manage and prioritize development tickets, translating business requirements into reliable data-driven deliverables that improved reporting accuracy and visibility across stakeholder groups.
 
-**Tutor, XYZ Company (2019)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Data Engineer, Decision Point Analytics (Feb 2021-Dec 2022)**: Designed and delivered scalable data engineering and analytics solutions supporting Marketing Mix Modeling (MMM) and promotional analytics initiatives for Fortune 500 clients. Developed Python-based ETL pipelines and advanced SQL transformation workflows using Databricks across Azure and AWS cloud environments to process large-scale marketing and sales datasets. Automated data ingestion and validation workflows and produced analytics-ready datasets powering reporting dashboards and campaign performance measurement. Collaborated within Agile teams to translate business requirements into reliable data-driven deliverables that improved reporting accuracy, marketing attribution visibility, and decision-making across stakeholder groups.
 
 
 ## Education
-**XYZ university (2012-2016)**, Bachelor of Applied Sciences, Electrical and Computer Engineering
-- Scholarship
-- Dean's List (2015, 2016): Ut enim ad minim veniam
-- GPA: 3.8/4.0
+**SRM University (2016-2020)**, Bachelor of Computer Sciences, Computer Science
+- First Class with Distinction
 
-**XYZ university (2016-2018)**, Master of Engineering, Electrical and Computer Engineering
+**Georgian College (2023-2024)**, Postgraduate Certificate in Artificial Intelligence, School of Information Technology 
+- Dean's List
 
 
 ## Miscellaneous
-- Udacity Machine Learning (2019)
-- Winner
-- Basketball player
-- Competitive gaming
-- Volunteer, ABC Food bank: Ut enim ad minim veniam
+- Microsoft Certified: Azure Data Fundamentals
+- Databricks Certified Data Engineer Associate
+- IBM Data Science Professional Certificate
+- Machine Learning with Python (IBM)
+- Databases and SQL for Data Science with Python (IBM)
+- Introduction to the Internet of Things (IoT)- Curtin University
