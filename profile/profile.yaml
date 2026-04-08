@@ -39,7 +39,7 @@ jarvis_projects:
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
   - name: "Linux Cluster Resource Monitoring App"
-    git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/main/linux_sql"
+    git_url: "/tree/main/linux_sql"
     description: "Designed and implemented a lightweight Linux cluster monitoring system using Bash scripts and crontab to collect hardware specifications and real-time CPU and memory utilization metrics. Stored collected telemetry in a PostgreSQL database running inside Docker and developed SQL-based analytics queries to support capacity planning and performance monitoring. Automated scheduling and deployment to enable reliable, low-overhead monitoring across distributed environments."
   - name: "PostgreSQL Club Booking Database System"
     git_url: "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/main/sql"

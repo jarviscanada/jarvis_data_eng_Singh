@@ -35,7 +35,7 @@
   "jarvis_projects": [
     {
       "description": "Designed and implemented a lightweight Linux cluster monitoring system using Bash scripts and crontab to collect hardware specifications and real-time CPU and memory utilization metrics. Stored collected telemetry in a PostgreSQL database running inside Docker and developed SQL-based analytics queries to support capacity planning and performance monitoring. Automated scheduling and deployment to enable reliable, low-overhead monitoring across distributed environments.",
-      "git_url": "https://github.com/jarviscanada/jarvis_data_eng_Singh/tree/main/linux_sql",
+      "git_url": "/tree/main/linux_sql",
       "name": "Linux Cluster Resource Monitoring App"
     },
     {
