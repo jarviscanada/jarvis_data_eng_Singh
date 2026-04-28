@@ -1,0 +1,136 @@
+import dlt
+from pyspark.sql import functions as F
+from pyspark.sql.window import Window
+
+
+# =========================
+# Gold Layer
+# =========================
+
+@dlt.table(
+    name="gold_price_trend_analysis",
+    comment="Gold table for 7, 30, and 90 day stock price trend analysis"
+)
+def gold_price_trend_analysis():
+    prices_df = dlt.read("silver_daily_stock_prices")
+
+    w = Window.partitionBy("symbol").orderBy("trade_date")
+
+    return (
+        prices_df
+        .withColumn("close_price_7d_ago", F.lag("close_price", 7).over(w))
+        .withColumn("close_price_30d_ago", F.lag("close_price", 30).over(w))
+        .withColumn("close_price_90d_ago", F.lag("close_price", 90).over(w))
+        .withColumn("price_change_7d", F.round(F.col("close_price") - F.col("close_price_7d_ago"), 2))
+        .withColumn("price_change_30d", F.round(F.col("close_price") - F.col("close_price_30d_ago"), 2))
+        .withColumn("price_change_90d", F.round(F.col("close_price") - F.col("close_price_90d_ago"), 2))
+        .withColumn("price_change_pct_7d", F.round((F.col("price_change_7d") / F.col("close_price_7d_ago")) * 100, 2))
+        .withColumn("price_change_pct_30d", F.round((F.col("price_change_30d") / F.col("close_price_30d_ago")) * 100, 2))
+        .withColumn("price_change_pct_90d", F.round((F.col("price_change_90d") / F.col("close_price_90d_ago")) * 100, 2))
+        .select(
+            "symbol",
+            "trade_date",
+            "close_price",
+            "price_change_7d",
+            "price_change_30d",
+            "price_change_90d",
+            "price_change_pct_7d",
+            "price_change_pct_30d",
+            "price_change_pct_90d"
+        )
+    )
+
+
+@dlt.table(
+    name="gold_volume_trend_analysis",
+    comment="Gold table for 7, 30, and 90 day stock volume trend analysis"
+)
+def gold_volume_trend_analysis():
+    prices_df = dlt.read("silver_daily_stock_prices")
+
+    w_7 = Window.partitionBy("symbol").orderBy("trade_date").rowsBetween(-6, 0)
+    w_30 = Window.partitionBy("symbol").orderBy("trade_date").rowsBetween(-29, 0)
+    w_90 = Window.partitionBy("symbol").orderBy("trade_date").rowsBetween(-89, 0)
+
+    return (
+        prices_df
+        .withColumn("avg_volume_7d", F.round(F.avg("volume").over(w_7), 0))
+        .withColumn("avg_volume_30d", F.round(F.avg("volume").over(w_30), 0))
+        .withColumn("avg_volume_90d", F.round(F.avg("volume").over(w_90), 0))
+        .withColumn("volume_vs_7d_avg", F.round(F.col("volume") - F.col("avg_volume_7d"), 0))
+        .withColumn("volume_vs_30d_avg", F.round(F.col("volume") - F.col("avg_volume_30d"), 0))
+        .withColumn("volume_vs_90d_avg", F.round(F.col("volume") - F.col("avg_volume_90d"), 0))
+        .select(
+            "symbol",
+            "trade_date",
+            "volume",
+            "avg_volume_7d",
+            "avg_volume_30d",
+            "avg_volume_90d",
+            "volume_vs_7d_avg",
+            "volume_vs_30d_avg",
+            "volume_vs_90d_avg"
+        )
+    )
+
+
+@dlt.table(
+    name="gold_latest_stock_snapshot",
+    comment="Latest stock snapshot combining quote, company info, and most recent daily price"
+)
+def gold_latest_stock_snapshot():
+    prices_df = dlt.read("silver_daily_stock_prices")
+    quotes_df = dlt.read("silver_stock_quotes")
+    company_df = dlt.read("silver_company_info")
+
+    latest_price_date_df = (
+        prices_df
+        .groupBy("symbol")
+        .agg(F.max("trade_date").alias("latest_price_date"))
+    )
+
+    latest_prices_df = (
+        prices_df.alias("p")
+        .join(
+            latest_price_date_df.alias("m"),
+            (F.col("p.symbol") == F.col("m.symbol")) &
+            (F.col("p.trade_date") == F.col("m.latest_price_date")),
+            "inner"
+        )
+        .select(
+            F.col("p.symbol").alias("symbol"),
+            F.col("p.trade_date").alias("latest_price_date"),
+            F.col("p.open_price").alias("open_price"),
+            F.col("p.high_price").alias("high_price"),
+            F.col("p.low_price").alias("low_price"),
+            F.col("p.close_price").alias("close_price"),
+            F.col("p.volume").alias("daily_volume")
+        )
+    )
+
+    return (
+        latest_prices_df.alias("lp")
+        .join(quotes_df.alias("q"), F.col("lp.symbol") == F.col("q.symbol"), "left")
+        .join(company_df.alias("c"), F.col("lp.symbol") == F.col("c.symbol"), "left")
+        .select(
+            F.col("lp.symbol").alias("symbol"),
+            F.col("c.company_name").alias("company_name"),
+            F.col("c.exchange").alias("exchange"),
+            F.col("c.sector").alias("sector"),
+            F.col("c.industry").alias("industry"),
+            F.col("c.country").alias("country"),
+            F.col("c.currency").alias("currency"),
+            F.col("lp.latest_price_date").alias("latest_price_date"),
+            F.col("lp.open_price").alias("open_price"),
+            F.col("lp.high_price").alias("high_price"),
+            F.col("lp.low_price").alias("low_price"),
+            F.col("lp.close_price").alias("close_price"),
+            F.col("lp.daily_volume").alias("daily_volume"),
+            F.col("q.price").alias("quote_price"),
+            F.col("q.previous_close").alias("previous_close"),
+            F.col("q.change").alias("quote_change"),
+            F.col("q.change_percent").alias("quote_change_percent"),
+            F.col("q.latest_trading_day").alias("quote_latest_trading_day"),
+            F.col("c.market_capitalization").alias("market_capitalization")
+        )
+    )
