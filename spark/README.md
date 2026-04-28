@@ -196,5 +196,5 @@ Data Flow:
 * Extend the stock DLT pipeline to include advanced technical indicators such as RSI, MACD, and moving average crossover signals
 * Add additional financial data sources (e.g., Yahoo Finance, Polygon API) to enrich stock analytics coverage
 * Implement role-based access control using Unity Catalog governance policies for production-ready data security 
-*Deploy workflow scheduling with parameterized jobs for automated daily pipeline execution across both ELT and DLT architectures
+* Deploy workflow scheduling with parameterized jobs for automated daily pipeline execution across both ELT and DLT architectures
 
