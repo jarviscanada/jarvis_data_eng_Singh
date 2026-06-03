@@ -5,7 +5,7 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_Singh
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: Data Engineer with 2 years of experience building scalable data pipelines and reporting solutions for Fortune 500 clients. Experienced in designing ETL workflows and transforming large-scale datasets using Python, SQL, Spark, and Databricks across Azure and AWS cloud environments. Delivered analytics-ready datasets supporting business intelligence and enterprise reporting use cases. Holds a Bachelor?s degree in Computer Science and a postgraduate specialization in Artificial Intelligence. Completed hands-on distributed data engineering projects through Jarvis training including Linux monitoring agents, retail analytics pipelines, and Spark-based processing on GCP Dataproc. Strong foundation in data modeling, cloud-based analytics platforms, and modern pipeline orchestration tools including  dbt, and Docker. 
+summary: Data Engineer with 2 years of experience building scalable data pipelines, ETL workflows, and reporting solutions for Fortune 500 clients. Experienced in transforming large-scale datasets using Python, SQL, PySpark, Azure Databricks, Azure Data Factory, Azure Data Lake Storage Gen2, and database systems. Worked on Databricks-based analytics projects involving medallion architecture, Delta Live Tables, Delta tables, data quality checks, and automated workflow orchestration. Delivered analytics-ready datasets supporting business intelligence, enterprise reporting, financial analytics, and promotional analytics use cases. Holds a Bachelor's degree in Computer Science and a postgraduate specialization in Artificial Intelligence, with hands-on Jarvis projects in Linux monitoring, retail analytics, Spark processing, and cloud-based data engineering. 
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -14,7 +14,7 @@ skills:
   proficient:
     - Python
     - AWS
-    - Azure Data Platform
+    - Azure
     - Databricks
     - Pyspark
     - Sql 
@@ -57,9 +57,10 @@ jarvis_projects:
   - name: "ETL pipeline for Financial Data"
     git_url: "/spark"
     description: "Financial Fraud Analytics ETL Pipeline [GitHub]: Designed and implemented an end-to-end fraud analytics data pipeline on Azure Databricks using Medallion Architecture (Bronze, Silver, Gold) to ingest, clean, enrich, and analyze multi-source financial transaction datasets. Integrated Azure SQL Database, Azure Data Lake Storage Gen2, PySpark, and JDBC to process transactions, card data, user profiles, merchant category codes, and fraud labels into analytics-ready Delta tables. Built curated Gold-layer datasets to support fraud trend monitoring, high-risk user identification, merchant-category fraud rate analysis, daily fraud loss tracking, and behavioral pattern changes before and after fraud events. Developed interactive Databricks dashboards and scheduled Databricks Jobs to orchestrate automated pipeline execution from ingestion to reporting refresh, enabling scalable and production-style analytics workflows."
-  - name: "DLT Pipeline for Alpha Vantage Stock Data"
-    git_url: "/spark"
-    description: "Designed and implemented an end-to-end data pipeline in Azure Databricks using Delta Live Tables (DLT), PySpark, and REST API ingestion following a Medallion Architecture (Bronze, Silver, Gold). Built ingestion pipelines for raw API data, applied transformation logic for data cleaning, standardization, deduplication, and quality validation using DLT expectations, and created curated analytical tables supporting trend-based time-series analysis. Integrated processed datasets with Databricks dashboards for visualization and automated pipeline execution using Databricks Jobs, strengthening hands-on experience with DLT-based ETL development, financial data engineering workflows, and production-style orchestration."    
+  - name: "COBOL Student Registration System"
+    git_url: "/mainframe"
+    description: "Built a COBOL-based Student Registration System using OpenCobolIDE and GnuCOBOL to simulate mainframe-style indexed file processing. Developed a menu-driven application to generate a student master file, insert new student records, update existing records, delete records, and query students by ID or insertion date. Implemented course-wise report generation using COBOL sorting, sequential file handling, indexed file access, record layouts, and structured procedural logic. Strengthened practical understanding of COBOL fundamentals, copybooks, file control entries, working-storage design, CRUD operations, and report generation in a mainframe-style business application."    
+
 
 # List of personal or academic projects
 # Feel free to add more projects
