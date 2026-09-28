@@ -1,14 +1,14 @@
 # Prabhat Kumar Singh . Jarvis Consulting
 
-Data Engineer with 2 years of experience building scalable data pipelines, ETL workflows, and reporting solutions for Fortune 500 clients. Experienced in transforming large-scale datasets using Python, SQL, PySpark, Azure Databricks, Azure Data Factory, Azure Data Lake Storage Gen2, and database systems. Worked on Databricks-based analytics projects involving medallion architecture, Delta Live Tables, Delta tables, data quality checks, and automated workflow orchestration. Delivered analytics-ready datasets supporting business intelligence, enterprise reporting, financial analytics, and promotional analytics use cases. Holds a Bachelor's degree in Computer Science and a postgraduate specialization in Artificial Intelligence, with hands-on Jarvis projects in Linux monitoring, retail analytics, Spark processing, and cloud-based data engineering.
+Cloud and Data Engineer with over two years of experience building scalable data pipelines, cloud-based data solutions, machine learning workflows, and enterprise integrations for Fortune 500 clients. Experienced with Python, SQL, PySpark, APIs, AWS services including S3, Glue, Athena, Lambda, and SageMaker, and Azure technologies including Data Factory, Databricks, Synapse, and ADLS Gen2. Built solutions supporting promotion analytics, forecasting, automation, and enterprise data migration. Also developed hands-on AI projects using LangChain, embeddings, FAISS vector search, and retrieval-augmented generation. Interested in building reliable cloud, platform, automation, and AI-enabled solutions that solve measurable business problems.
 
 ## Skills
 
 **Proficient:** Python, AWS, Azure, Databricks, Pyspark, Sql, Power BI
 
-**Competent:** dbt, Docker, PostgreSQL, Data Modeling, ETL Pipeline Development, Machine Learning(Regression/Clustering)
+**Competent:** REST APIs, Docker, PostgreSQL, Data Modeling, ETL Pipeline Development, Machine Learning(Regression/Clustering)
 
-**Familiar:** Hadoop/HDFS, GCP Dataproc, Java, Kafka, Financial Reporting/Financial Forcasting
+**Familiar:** Hadoop/HDFS, Retrieval-Augmented Generation (RAG), Java, Linux/Unix, Financial Reporting/Financial Forcasting
 
 ## Jarvis Projects
 
@@ -40,7 +40,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_Singh](htt
 
 **Data Engineer, Jarvis (2026-present)**: Contributed as a Data Integration Engineer and Developer on an engagement for Arterra Wines. Developed and enhanced Python workflows to transform and migrate customer, address, payment-token, product, and subscription data from WineDirect into Salesforce Commerce Cloud, Adyen, and Ordergroove. Implemented data mapping, validation, deduplication, and error-handling logic to improve migration accuracy and resolve integration issues. On the development side, contributed to the Salesforce fulfillment site using Lightning Web Components and Apex, including enhancements to the pick-ticket queue and location-based order filtering. Collaborated with business and technical teams to understand requirements, test integrations, troubleshoot issues, and deliver reliable migration and fulfillment solutions.
 
-**Data Engineer, Decision Point Analytics (Feb 2021-Dec 2022)**: Designed and delivered scalable data engineering and analytics solutions supporting Marketing Mix Modeling (MMM) and promotional analytics initiatives for Fortune 500 clients. Developed Python-based ETL pipelines and advanced SQL transformation workflows using Databricks across Azure and AWS cloud environments to process large-scale marketing and sales datasets. Automated data ingestion and validation workflows and produced analytics-ready datasets powering reporting dashboards and campaign performance measurement. Collaborated within Agile teams to translate business requirements into reliable data-driven deliverables that improved reporting accuracy, marketing attribution visibility, and decision-making across stakeholder groups.
+**Data Engineer, Decision Point Analytics (Feb 2021-Dec 2022)**: Designed and supported AWS-based data engineering and Promotion Analytics solutions for Fortune 500 retail and CPG clients. Built Python, SQL, and PySpark data pipelines to process large volumes of historical sales, pricing, product, and promotional data using AWS services including S3, Glue, Athena, Lambda, and SageMaker. Developed transformation, validation, and automation workflows that prepared analytics-ready datasets for promotion measurement and machine learning use cases. The broader Promotion Analytics initiative contributed to more than $15 million in revenue uplift and improved promotional ROI by 12%. Collaborated with business and technical teams to translate analytical requirements into scalable cloud-based solutions and reliable data workflows.
 
 
 ## Education
